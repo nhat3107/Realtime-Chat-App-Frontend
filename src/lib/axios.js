@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const axiosInstance = axios.create({
-  baseURL: process.env.BACKEND_URL + "/api",
+  baseURL: "https://realtime-chat-app-backend-six.vercel.app/api",
   withCredentials: true,
 });
 
