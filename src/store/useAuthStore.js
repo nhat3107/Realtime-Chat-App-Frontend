@@ -5,7 +5,7 @@ import { persist } from "zustand/middleware";
 import io from "socket.io-client";
 import { useChatStore } from "./useChatStore";
 
-const BASE_URL = process.env.BACKEND_URL;
+const BASE_URL = "http://localhost:3000";
 export const useAuthStore = create(
   persist(
     (set, get) => ({
