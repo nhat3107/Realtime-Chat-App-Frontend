@@ -5,7 +5,7 @@ import { persist } from "zustand/middleware";
 import io from "socket.io-client";
 import { useChatStore } from "./useChatStore";
 
-const BASE_URL = "https://realtime-chat-app-backend-l0eb.onrender.com";
+const BASE_URL = process.env.BACKEND_URL;
 export const useAuthStore = create(
   persist(
     (set, get) => ({
