@@ -1,9 +1,6 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-<<<<<<< HEAD
-  baseURL: "http://localhost:3000/api",
-=======
   baseURL: process.env.BACKEND_URL + "/api",
 >>>>>>> 5ac7a7469b1c5400f923753df7e01ceb8fc7c29a
   withCredentials: true,
